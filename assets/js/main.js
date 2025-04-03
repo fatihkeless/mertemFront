@@ -166,4 +166,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     videoSlider.mount();
 
+    // Katalog PDF linki için özel işleyici
+    const katalogLink = document.querySelector('a[href$="/assets/pdf/Mertem Katalog.pdf"]');
+    if (katalogLink) {
+        katalogLink.addEventListener('click', function(e) {
+            e.preventDefault(); // Varsayılan davranışı engelle
+            const pdfUrl = this.getAttribute('href');
+            window.open(pdfUrl, '_blank', 'noopener,noreferrer');
+        });
+    }
+
 });

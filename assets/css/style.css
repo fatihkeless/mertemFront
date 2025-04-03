@@ -105,6 +105,10 @@ header {
     opacity: 1;
     visibility: visible;
     display: block;
+    cursor: pointer;
+}
+.dropdown-menu:hover {
+    cursor: pointer;
 }
 
 .dropdown-menu li {
@@ -138,7 +142,7 @@ header {
 }
 
 /* Mobile Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .hamburger {
         display: block;
     }
@@ -650,7 +654,6 @@ footer {
 
 /* About Section */
 .about-section {
-    background-color: #f8f9fa;
 }
 
 .about-content {
@@ -867,7 +870,6 @@ footer {
 
 /* E-Catalog Section */
 .e-catalog-section {
-    background-color: #f8f9fa;
     text-align: center;
 }
 
@@ -1518,16 +1520,65 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.breadcrumb a,
+.breadcrumb span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px; /* Desktop için maksimum genişlik */
+    color: #666;
+    text-decoration: none;
 }
 
 .breadcrumb a {
     color: #007bff;
-    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #0056b3;
 }
 
 .breadcrumb i {
-    font-size: 12px;
     color: #666;
+    font-size: 12px;
+    flex-shrink: 0; /* Ok ikonları küçülmesin */
+}
+
+/* Mobil cihazlar için breadcrumb ayarları */
+@media (max-width: 768px) {
+    .breadcrumb {
+        font-size: 0.8rem;
+        gap: 8px;
+    }
+
+    .breadcrumb a,
+    .breadcrumb span {
+        max-width: 120px; /* Mobil için daha küçük maksimum genişlik */
+    }
+
+    /* Son öğe (current page) için daha fazla alan */
+    .breadcrumb span.current {
+        max-width: 150px;
+    }
+}
+
+/* Çok küçük ekranlar için */
+@media (max-width: 480px) {
+    .breadcrumb a,
+    .breadcrumb span {
+        max-width: 80px; /* Daha da küçük ekranlar için daha az genişlik */
+    }
+
+    .breadcrumb span.current {
+        max-width: 120px;
+    }
 }
 
 .product-detail {
@@ -1552,7 +1603,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px; /* Sabit yükseklik */
+    height: 400px;
     background: #fff;
 }
 
@@ -1564,6 +1615,9 @@ footer {
     object-fit: contain;
     padding: 20px;
 }
+
+
+    
 
 .showcase-arrow {
     background: #fff !important;
@@ -1614,7 +1668,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .showcase-arrow {
         width: 35px !important;
         height: 35px !important;
@@ -1622,6 +1676,21 @@ footer {
     
     #related-products .splide {
         padding: 0 35px !important; /* Mobile için padding azalt */
+        width: 100%;
+    }
+    
+
+    .product-detail {
+        display: flex;
+        width: 100%;
+    }
+    
+    .product-gallery {
+        width: 100%;
+    }
+    
+    .product-info-detail {
+        width: 100%;
     }
 }
 
@@ -1680,6 +1749,11 @@ footer {
 .splide__arrow svg {
     fill: #333;
 }
+
+.splide__arrow:hover {
+   cursor: pointer;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -1985,15 +2059,20 @@ footer {
 
 /* Parent elementlerin etkisini azalt */
 .splide__slide {
-    pointer-events: none !important; /* Slide'ın tıklamayı engellemesini önle */
+    pointer-events: auto !important; /* Slide'ların tıklanabilir olmasını sağla */
 }
 
 .showcase-card {
     pointer-events: none !important; /* Card'ın tıklamayı engellemesini önle */
 }
 
-/* Sadece link tıklanabilir olsun */
-.showcase-link {
+/* Sadece showcase slider için pointer-events: none uygula */
+#related-products .splide__slide {
+    pointer-events: none !important;
+}
+
+/* Showcase için özel link davranışı */
+#related-products .showcase-link {
     pointer-events: auto !important;
 }
 
@@ -2152,6 +2231,7 @@ footer {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
 }
 
+
 .showcase-arrow svg {
     width: 14px !important;
     fill: #333 !important;
@@ -2159,6 +2239,7 @@ footer {
 
 .showcase-arrow:hover {
     background: #007bff !important;
+    cursor: pointer;
 }
 
 .showcase-arrow:hover svg {
@@ -2185,13 +2266,49 @@ footer {
 /* Hero Bölümü */
 .about-hero,
 .contact-hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-bg.jpg');
-    background-size: cover;
+    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/iletisim.jpg');
     background-position: center;
     color: #fff;
-    padding: 100px 0;
     text-align: center;
     margin-bottom: 60px;
+}
+
+.video-img {
+    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/video.jpg');
+}
+
+.about-img{
+    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/hakkımızda.jpg');
+}
+
+.markalar-img{
+    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/markalar.jpg');
+}
+
+.kategori-img{
+    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/kategori.jpg');
+}
+
+@media (max-width: 768px) {
+    .contact-hero {
+        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/iletisim.jpg');
+    }
+    .video-img {
+        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/video-mobile.jpg');
+    }
+    
+    .about-img{
+        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/hakkımızdamobil.jpg');
+    }
+    
+    .markalar-img{
+        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/markalarmobil.jpg');
+    }
+    
+    .kategori-img{
+        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/kategorimobil.jpg');
+    }
+    
 }
 
 .about-hero h1,
@@ -2238,7 +2355,9 @@ footer {
 
 /* İletişim Sayfası */
 .contact-section {
-    padding: 60px 0;
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    margin-top: 0; /* Üstteki boşluğu kaldır */
 }
 
 /* İletişim Grid Yapısı */
@@ -2900,19 +3019,20 @@ footer {
 .swiper-button-prev {
     color: #fff !important;
     background: rgba(0, 0, 0, 0.5);
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
     border-radius: 50%;
     transform: translateY(-50%);
 }
 
-.swiper-button-next {
-    right: -10px !important;
+
+.swiper-button-next:hover {
+    cursor:pointer;
+}
+.swiper-button-prev:hover {
+    cursor:pointer;
 }
 
-.swiper-button-prev {
-    left: -10px !important;
-}
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -2948,17 +3068,10 @@ footer {
 @media (max-width: 768px) {
     .swiper-button-next,
     .swiper-button-prev {
-        width: 40px !important;
-        height: 40px !important;
+        width: 35px !important;
+        height: 35px !important;
     }
 
-    .swiper-button-next {
-        right: -5px !important;
-    }
-
-    .swiper-button-prev {
-        left: -5px !important;
-    }
 
     .video-slider {
         padding: 40px 30px !important;
@@ -3192,4 +3305,274 @@ footer {
 /* Hover durumunda hafif renk değişimi */
 .video-card:hover .video-info {
     background: #f1f3f5;
+}/* Contact Page Styles */
+.contact-hero {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 70px;
+    margin-bottom: 0; /* Alttaki boşluğu kaldır */
 }
+
+.contact-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.8s ease;
+}
+
+.contact-hero .subtitle {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    animation: fadeInUp 1s ease 0.2s;
+    animation-fill-mode: both;
+}
+
+.contact-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    margin-top: 0; /* Üstteki boşluğu kaldır */
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.contact-info {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.contact-info h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+}
+
+.info-cards {
+    display: grid;
+    gap: 30px;
+}
+
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    background: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card-icon i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-content p,
+.card-content a {
+    color: #666;
+    line-height: 1.6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card-content a:hover {
+    color: #007bff;
+}
+
+.phone-numbers {
+    display: grid;
+    gap: 10px;
+}
+
+.map-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.map-container h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+}
+
+.contact-map {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+   
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-hero .subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-section {
+        padding: 40px 0;
+    }
+    
+    .contact-info,
+    .map-container {
+        padding: 20px;
+    }
+    
+    .contact-info h2,
+    .map-container h2 {
+        font-size: 1.8rem;
+    }
+    
+    .info-card {
+        padding: 15px;
+    }
+    
+    .card-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .card-icon i {
+        font-size: 1.2rem;
+    }
+    
+    .contact-map iframe {
+        height: 300px;
+    }
+}
+
+/* Hizmetlerimiz Section */
+.services-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.services-section2 {
+    padding: 60px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments for services section */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+}
+
+

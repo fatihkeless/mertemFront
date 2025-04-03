@@ -88,8 +88,8 @@ function setupProductGallery(product) {
     thumbnailSliderEl.innerHTML = `
         <div class="splide__track">
             <ul class="splide__list">
-                ${images.map(image => `
-                    <li class="splide__slide">
+                ${images.map((image, index) => `  <!-- Index ekledik -->
+                    <li class="splide__slide" data-splide-index="${index}">
                         <img src="${image}" alt="Thumbnail">
                     </li>
                 `).join('')}
@@ -102,12 +102,12 @@ function setupProductGallery(product) {
         type:  'loop',
         perPage: 1,
         perMove: 1,
-        arrows: product.productImages.length > 1 ? true : false,
-        pagination: product.productImages.length > 1  ? true : false,
+        arrows: product.productImages.length > 1,
+        pagination: product.productImages.length > 1,
         breakpoints: {
             768: {
-                arrows: product.productImages.length > 1 ? true : false,
-                pagination: product.productImages.length > 1  ? true : false,
+                arrows: product.productImages.length > 1,
+                pagination: product.productImages.length > 1,
             }
         },
         classes: {
@@ -122,7 +122,7 @@ function setupProductGallery(product) {
         gap: 10,
         rewind: true,
         pagination: false,
-        isNavigation: true,
+        isNavigation: true, // Bu önemli
         arrows: false,
         breakpoints: {
             768: {
@@ -131,9 +131,8 @@ function setupProductGallery(product) {
             }
         }
     });
-
     // Slider'ları senkronize et ve mount et
-    mainSlider.sync(thumbnailSlider);
+    mainSlider.sync(thumbnailSlider); // Thumbnail ile ana slider'ı bağladık
     mainSlider.mount();
     thumbnailSlider.mount();
 }
@@ -147,11 +146,11 @@ function updateBreadcrumb(productName, categoryName) {
     const breadcrumb = document.querySelector('.breadcrumb');
     if (breadcrumb) {
         breadcrumb.innerHTML = `
-            <a href="../index.html">Ana Sayfa</a>
+            <a href="../">Ana Sayfa</a>
             <i class="fas fa-chevron-right"></i>
-            <a href="Kategori.html">Ürünler</a>
+            <a href="../Kategori/">Ürünler</a>
             <i class="fas fa-chevron-right"></i>
-            <a href="Kategori.html?category=${getCategorySlug(categoryName)}">${categoryName}</a>
+            <a href="../Kategori/?category=${getCategorySlug(categoryName)}">${categoryName}</a>
             <i class="fas fa-chevron-right"></i>
             <span class="current">${productName}</span>
         `;

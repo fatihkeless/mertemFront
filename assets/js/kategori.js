@@ -139,14 +139,14 @@ function createProductCardsHTML(productsList) {
                 <img src="${product.image}" 
                      alt="${product.name}" 
                      class="product-image"
-                     onerror="this.src='/src/assets/images/no-image.jpg'">
+                     onerror="this.src='/assets/images/no-image.jpg'">
             </div>
             <div class="product-info">
                 <h3 class="product-title">${product.name}</h3>
-                <p class="product-desc">${product.description}</p>
+                
                 <div class="product-footer">
                     
-                    <a href="urun.html?id=${product.id}&category=${product.category}" 
+                    <a href="../Urunlerimiz/?id=${product.id}&category=${product.category}" 
                        class="product-detail-btn"
                        onclick="localStorage.setItem('selectedProduct', JSON.stringify(${JSON.stringify(product)}))">
                         Detayları Gör <i class="fas fa-arrow-right"></i>
