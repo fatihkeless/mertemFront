@@ -60,10 +60,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var splide = new Splide('#image-slider', {
         type: 'fade',
         cover: true,
-        height: "100vh",
+        height: "92vh",
         rewind: true,
         autoplay: true,
-        interval: 5000,
+        interval: 30000,
         pauseOnHover: false,
         arrows: true,
         pagination: true,

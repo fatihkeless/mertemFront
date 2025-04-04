@@ -625,7 +625,8 @@ footer {
 }
 
 .sldier_bgcolor::before{
-    background: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5));
+
 }
 
 .splide__slide img {
@@ -2294,7 +2295,7 @@ footer {
         background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/iletisim.jpg');
     }
     .video-img {
-        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/video-mobile.jpg');
+        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/videomobil.jpg');
     }
     
     .about-img{
@@ -3310,7 +3311,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 800px;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3580,6 +3581,34 @@ footer {
     .service-card {
         padding: 20px;
     }
+}
+
+.slider-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    background: #fff;
+}
+
+.slider-btn:hover {
+    background: transparent;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.slider-btn i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.slider-btn:hover i {
+    transform: translateX(5px);
 }
 
 

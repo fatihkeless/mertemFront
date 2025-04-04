@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Galeri - Mertem</title>
+    <title>ARKAN FELEZ - Mertem</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/logo/_icon.png">
 </head>
 <body>
@@ -33,11 +31,11 @@
                     <li class="nav-item dropdown">
                         <a  class="nav-link">Markalar <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../ArkanFelez/" class="dropdown-link">ARKAN FELEZ</a></li>
+                            <li><a href="" class="dropdown-link">ARKAN FELEZ</a></li>
                             <li><a href="../IntKorea/" class="dropdown-link">INTKOREA</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="" class="nav-link">Video Galeri</a></li>
+                    <li class="nav-item"><a href="../VideoGaleri/" class="nav-link">Video Galeri</a></li>
                     <li class="nav-item"><a href="../Iletisim/" class="nav-link">İletişim</a></li>
                 </ul>
             </div>
@@ -45,21 +43,24 @@
     </header>
 
     <main>
-        <div class="contact-hero video-img">
+        <div class="contact-hero markalar-img">
             <div class="container">
-                <h1>Video Galeri</h1>
-                <p class="subtitle">Ürün ve Hizmet Videolarımız</p>
+                <h1>ARKAN FELEZ</h1>
+                <p class="subtitle">Katalog ve Dökümanlar</p>
             </div>
         </div>
 
-        
-
-        <!-- Mevcut grid bölümü -->
-        <section class="video-gallery">
+        <section class="catalog-section">
             <div class="container">
-                
-                <div class="video-grid" id="videoGrid">
-                    <!-- Grid videoları JavaScript ile buraya eklenecek -->
+                <div class="catalog-buttons">
+                    <a href="../assets/pdf/Arkan Felez.pdf"  target="_blank" class="catalog-btn">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>PDF Katalog İndir</span>
+                    </a>
+                    <a href="" target="_blank" class="catalog-btn">
+                        <i class="fas fa-globe"></i>
+                        <span>Online Katalog</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -73,10 +74,10 @@
                     <h3>Hızlı Linkler</h3>
                     <ul class="footer-links">
                         <li><a href="../">Ana Sayfa</a></li>
-                        <li><a href="../Hakkimizda/">Hakkımızda</a></li>
-                        <li><a href="../Kategori/">Ürünlerimiz</a></li>
-                        <li><a href="">Video Galeri</a></li>
-                        <li><a href="../Iletisim/">İletişim</a></li>
+                        <li><a href="../hakkimizda/">Hakkımızda</a></li>
+                        <li><a href="../kategori/">Ürünlerimiz</a></li>
+                        <li><a href="../video-galeri/">Video Galeri</a></li>
+                        <li><a href="../iletisim/">İletişim</a></li>
                     </ul>
                 </div>
 
@@ -121,17 +122,7 @@
         </div>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="../assets/js/videoGallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
     <script src="../assets/js/main.js"></script>
-
-    <!-- Video Modal -->
-    <div class="video-modal" id="videoModal">
-        <span class="close-modal">&times;</span>
-        <div class="modal-content">
-            <div class="video-container" id="videoContainer"></div>
-        </div>
-    </div>
 </body>
 </html>
