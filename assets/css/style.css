@@ -276,6 +276,7 @@ footer {
     background: #1a1a1a;
     color: #fff;
     padding: 60px 0 20px;
+    
 }
 
 .footer-content {
@@ -283,6 +284,12 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    top: 0;
+    
+
 }
 
 .footer-section h3 {
