@@ -60,13 +60,18 @@ document.addEventListener('DOMContentLoaded', function () {
     var splide = new Splide('#image-slider', {
         type: 'fade',
         cover: true,
-        height: "92vh",
-        rewind: true,
-        autoplay: true,
+        height: "85vh",
+        rewind: false,
+        autoplay: false,
         interval: 30000,
         pauseOnHover: false,
-        arrows: true,
+        arrows: false,
         pagination: true,
+        breakpoints: {
+            900: {
+                height: '70vh',
+            }
+        }
     });
 
     // Function to handle animations

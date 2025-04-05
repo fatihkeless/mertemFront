@@ -146,7 +146,7 @@ function createProductCardsHTML(productsList) {
                 
                 <div class="product-footer">
                     
-                    <a href="../Urunlerimiz/?id=${product.id}&category=${product.category}" 
+                    <a href="../urunlerimiz/?id=${product.id}&category=${product.category}" 
                        class="product-detail-btn"
                        onclick="localStorage.setItem('selectedProduct', JSON.stringify(${JSON.stringify(product)}))">
                         Detayları Gör <i class="fas fa-arrow-right"></i>

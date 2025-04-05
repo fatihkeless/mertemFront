@@ -601,12 +601,62 @@ footer {
     }
     
     .slide-description p:first-child {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     
     .slide-description p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
+    .slider-btn {
+        padding: 10px 25px;
+        font-size: 20px;
+    }
+    
+}
+
+/* Responsive adjustments for slider text */
+@media screen and (max-width: 568px) {
+    .slide-content {
+        padding-left: 5%;
+    }
+    
+    .slide-description p:first-child {
+        font-size: 2rem;
+    }
+    
+    .slide-description p {
+        font-size: 1rem;
+    }
+    .slider-btn {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+    
+}
+
+@media (min-width: 2160px) {
+        html {
+        font-size: 2em; /* Adjusted font-size for 2K screens */
+    }
+    .navbar{
+        max-width: 1800px;
+    }
+    .container {
+        max-width: 1800px;
+        
+    }
+
+    .video-slider{
+        max-width: 1800px;
+    }
+    .contact-grid{
+        max-width: 1800px;
+    }
+    .slider-btn {
+        padding: 30px 50px;
+        font-size: 3em;
+    }
+
 }
 
 /* Ensure slide images have a dark overlay for better text visibility */
@@ -3609,6 +3659,21 @@ footer {
 
 .slider-btn:hover i {
     transform: translateX(5px);
+}
+
+@media screen and (max-width: 480px) {
+    .slide-description p:first-child {
+        font-size: 1.8rem;
+    }
+    
+    .slide-description p {
+        font-size: 0.9rem;
+    }
+    
+    .slider-btn {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
 }
 
 
