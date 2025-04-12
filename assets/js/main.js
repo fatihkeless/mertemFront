@@ -166,6 +166,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 arrows: true,
                 pagination: true,
             }
+            
         }
     });
 
