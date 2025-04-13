@@ -2984,6 +2984,7 @@ footer {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
     transition: transform 0.3s ease;
 }
 
@@ -3033,7 +3034,7 @@ footer {
 }
 
 .video-title {
-    font-size: 15px; /* Font boyutunu biraz artırdık */
+    font-size: 1rem; /* Font boyutunu biraz artırdık */
     font-weight: 500;
     color: #2d2d2d;
     line-height: 1.5; /* Satır yüksekliğini artırdık */
@@ -3849,9 +3850,19 @@ footer {
         overflow: hidden;
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
     }
+
+    .video-grid .video-card{
+        width: 500px;
+        margin-top: 2rem;
+    }
+
+    
+
+    
     .video-grid {
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
        
     }
     
