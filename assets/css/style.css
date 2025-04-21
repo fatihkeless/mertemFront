@@ -212,7 +212,7 @@ header {
 
     .dropdown.active .dropdown-menu {
         display: block;
-        max-height: 200px;
+        max-height: 600px;
         padding: 8px 0;
     }
 
