@@ -200,7 +200,7 @@ function loadShowcase(currentProduct) {
     const showcaseContainer = document.getElementById('related-products');
     
     // Eğer birden fazla ürün varsa slider'ı göster
-    if (products && products.length > 1) {
+    if (products && products.length >= 1) {
         const splideDiv = document.createElement('div');
         splideDiv.className = 'splide';
         
@@ -216,7 +216,7 @@ function loadShowcase(currentProduct) {
                                 <div class="showcase-info">
                                     <h3>${product.name}</h3>
                                     <p>${product.description || ''}</p>
-                                    <a href="urun.html?id=${product.id}&category=${categoryName}" 
+                                    <a href="../urunlerimiz/?id=${product.id}&category=${categoryName}" 
                                        class="showcase-link"
                                        onclick="localStorage.setItem('selectedProduct', JSON.stringify(${JSON.stringify(product)}))">
                                         İncele <i class="fas fa-arrow-right"></i>
