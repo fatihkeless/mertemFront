@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Modal işlemleri
-    const modal = document.getElementById('videoModal');
+    const modal = document.getElementById('videoModalNormal');
     const videoContainer = document.getElementById('videoContainer');
     const closeBtn = document.querySelector('.close-modal');
 

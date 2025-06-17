@@ -690,6 +690,7 @@ footer {
 
 /* About Section */
 .about-section {
+    padding: 60px 0 0 0;
 }
 
 .about-content {
@@ -907,6 +908,7 @@ footer {
 /* E-Catalog Section */
 .e-catalog-section {
     text-align: center;
+    background: #f8f9fc;
 }
 
 .catalog-description {
@@ -3148,15 +3150,15 @@ footer {
 
 .modal-content {
     position: relative;
-    width: 90%;
+    width: 100%;
     max-width: 900px;
-    background: #000;
+    margin: 0 auto;
     border-radius: 12px;
     overflow: hidden;
 }
 
 .video-container {
-    position: relative;
+    position: flex;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
@@ -3381,6 +3383,10 @@ footer {
     padding: 80px 0;
     background-color: #f8f9fa;
     margin-top: 0; /* Üstteki boşluğu kaldır */
+}
+
+.color-section {
+    background-color: #f1f1f1;
 }
 
 .contact-grid {

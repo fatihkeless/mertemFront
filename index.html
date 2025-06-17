@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/basindabizstyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
@@ -232,6 +233,9 @@
             </div>
         </section>
 
+        
+
+
         <!-- Video Galeri Section -->
         <section class="video-gallery section-padding">
             <div class="container">
@@ -252,13 +256,120 @@
             </div>
 
             <!-- Video Modal -->
-            <div id="videoModal" class="video-modal">
+            <div id="videoModalNormal" class="video-modal">
+                <span class="close-modal">&times;</span>
                 <div class="modal-content">
-                    <span class="close-modal">&times;</span>
+                    
                     <div class="video-container" id="videoContainer"></div>
                 </div>
             </div>
         </section>
+
+        <section class="color-section video-gallery">
+            <div class="container">
+                <h2 class="section-title">Basında Biz</h2>
+                
+                <div class="media-grid">
+                    
+
+                    <!-- Video 2 -->
+                    <div class="media-item video-item" data-video="basindabiz">
+                        <div class="media-thumbnail">
+                            <video preload="metadata" muted>
+                                <source src="../assets/video/basindabiz.mp4#t=2" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="media-duration">11:28</div>
+                        </div>
+                        <!-- <div class="media-content">
+                            <h3 class="media-title">INT KOREA Fabrika Tanıtım Filmi</h3>
+                            <p class="media-desc">Üretim tesislerimizin detaylı tanıtımı</p>
+                            <div class="media-date">28 Şubat 2024</div>
+                        </div> -->
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="media-item video-item" data-video="mertemtanitim2">
+                        <div class="media-thumbnail">
+                            <video preload="metadata" muted>
+                                <source src="../assets/video/mertem tanıtım.mp4#t=2" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="media-duration">03:31</div>
+                        </div>
+                        <!-- <div class="media-content">
+                            <h3 class="media-title">Yeni Ürün Serisi Tanıtımı</h3>
+                            <p class="media-desc">2024 model ürünlerimizin detaylı incelemesi</p>
+                            <div class="media-date">12 Şubat 2024</div>
+                        </div> -->
+                    </div>
+                   
+
+                    <!-- Video 7 -->
+                    <div class="media-item video-item" data-video="nostalji">
+                        <div class="media-thumbnail">
+                            <video preload="metadata" muted>
+                                <source src="../assets/video/nostaljiii.mp4#t=20" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="media-duration">05:46</div>
+                        </div>
+                        <!-- <div class="media-content">
+                            <h3 class="media-title">Gıda Teknolojileri Belgeseli</h3>
+                            <p class="media-desc">TRT Belgesel'de yayınlanan özel program</p>
+                            <div class="media-date">20 Ocak 2024</div>
+                        </div> -->
+                    </div>
+                   
+                </div>
+                
+            
+                
+                
+                <div class="photo-grid" id="my-gallery">
+                    <!-- Photo 1 -->
+                    <a href="../assets/images/press/1.jpg" 
+                       data-pswp-width="1200" 
+                       data-pswp-height="800" 
+                       class="photo-item">
+                        <img src="../assets/images/press/1.jpg" alt="Fuar Standı">
+                    </a>
+
+                    <!-- Photo 2 -->
+                    <a href="../assets/images/press/2.jpg" 
+                       data-pswp-width="1200" 
+                       data-pswp-height="800" 
+                       class="photo-item">
+                        <img src="../assets/images/press/2.jpg" alt="Fabrika İçi">
+                    </a>
+
+                    <!-- Photo 3 -->
+                    <a href="../assets/images/press/3.jpg" 
+                       data-pswp-width="1200" 
+                       data-pswp-height="800" 
+                       class="photo-item">
+                        <img src="../assets/images/press/3.jpg" alt="Ürün Sergileme">
+                    </a>
+                    
+
+                </div>
+                <div class="button-group">
+                    <a href="basinda-biz/" class="btn btn-primary">
+                        <i class="fas fa-photo-video"></i> Tüm İçerikler
+                    </a>
+                </div>
+            </div>
+        </section>
+        
 
         <!-- E-Katalog Section -->
         <section class="e-catalog-section section-padding">
@@ -275,7 +386,26 @@
                 </div>
             </div>
         </section>
+        
+        <div id="videoModal" class="basindabiz-video-modal">
+            <div class="basindabiz-modal-overlay">
+                <button class="basindabiz-modal-close" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="basindabiz-modal-content">
+                    
+                    <div class="basindabiz-modal-video-container">
+                        <video id="modalVideo" controls>
+                            <source src="" type="video/mp4">
+                            Tarayıcınız video oynatmayı desteklemiyor.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+    
 
     <footer class="footer">
         <div class="container">
@@ -336,6 +466,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/basindabiz.js"></script>
     <script src="/assets/js/videoGallery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>

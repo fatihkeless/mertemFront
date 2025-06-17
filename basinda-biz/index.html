@@ -42,7 +42,7 @@
                         <a class="nav-link">Markalar <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="../arkan-felez/" class="dropdown-link">ARKAN FELEZ</a></li>
-                            <li><a href="./" class="dropdown-link">INTKOREA</a></li>
+                            <li><a href="../int-korea/" class="dropdown-link">INTKOREA</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="../video-galeri/" class="nav-link">Video Galeri</a></li>
@@ -65,7 +65,7 @@
         <!-- Video Gallery Section -->
         <section class="press-section">
             <div class="container">
-                <h2 class="section-title">Video Galeri</h2>
+                <h2 class="section-title">Görsel Basında Biz</h2>
                 
                 <div class="media-grid">
                     <!-- Video 1 -->
@@ -244,7 +244,7 @@
         <!-- Radio Interview Section -->
         <section class="radio-section">
             <div class="container">
-                <h2 class="section-title">Radyo Konuşmaları</h2>
+                <h2 class="section-title">Radyo yayınları</h2>
                 
                 <!-- Main Interview -->
                 <div class="main-interview">
@@ -321,7 +321,7 @@
         <!-- Photo Gallery Section -->
         <section class="photo-section">
             <div class="container">
-                <h2 class="section-title">Fotoğraf Galerisi</h2>
+                <h2 class="section-title">Yazılı Basında Biz</h2>
                 
                 <div class="photo-grid" id="my-gallery">
                     <!-- Photo 1 -->
@@ -575,14 +575,14 @@
     </main>
 
     <!-- Video Modal -->
-    <div id="videoModal" class="video-modal">
-        <div class="modal-overlay">
-            <button class="modal-close" id="closeModal">
+    <div id="videoModal" class="basindabiz-video-modal">
+        <div class="basindabiz-modal-overlay">
+            <button class="basindabiz-modal-close" id="closeModal">
                 <i class="fas fa-times"></i>
             </button>
-            <div class="modal-content">
+            <div class="basindabiz-modal-content">
                 
-                <div class="modal-video-container">
+                <div class="basindabiz-modal-video-container">
                     <video id="modalVideo" controls>
                         <source src="" type="video/mp4">
                         Tarayıcınız video oynatmayı desteklemiyor.
@@ -652,307 +652,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
     <script src="../assets/js/main.js"></script>
-    <script type="module">
-        // Media interaction functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            // Video thumbnails click handler
-            const videoItems = document.querySelectorAll('.video-item');
-            const videoModal = document.getElementById('videoModal');
-            const modalVideo = document.getElementById('modalVideo');
-            const closeModal = document.getElementById('closeModal');
-
-            // Video data mapping
-            const videoData = {
-                'mertemtanitim': {
-                    src: '../assets/video/tanitim2.mp4',
-                    title: 'Nostalji - Özel Video',
-                    desc: 'Özel anlarımızdan derlenen nostalji videosu'
-                },
-                'basindabiz': {
-                    src: '../assets/video/basindabiz.mp4',
-                    title: 'INT KOREA Fabrika Tanıtım Filmi',
-                    desc: 'Üretim tesislerimizin detaylı tanıtımı'
-                },
-                'mertemtanitim2': {
-                    src: '../assets/video/mertem tanıtım.mp4',
-                    title: 'Mertem Tanıtım Filmi',
-                    desc: 'Mertem ürünlerinin detaylı tanıtımı'
-                },
-                'tgrt_eu': {
-                    src: '../assets/video/tgrt_eu.mp4',
-                    title: 'TGRT EUROPA',
-                    desc: 'TGRT EUROPA ürünlerinin detaylı tanıtımı'
-                },
-                'fuar': {
-                    src: '../assets/video/Fuar1.mp4',
-                    title: 'Mertem Tanıtım Filmi',
-                    desc: 'Mertem ürünlerinin detaylı tanıtımı'
-                },
-                'nostalji': {
-                    src: '../assets/video/nostaljiii.mp4',
-                    title: 'Fuarda INT KOREA',
-                    desc: 'INT KOREA ürünlerinin fuarda görüntüleri'
-                },
-                'tanitim2': {
-                    src: '../assets/video/111.mp4',
-                    title: 'Nostalji - Özel Video',
-                    desc: 'Özel anlarımızdan derlenen nostalji videosu'
-                },
-                'tanitim3': {
-                    src: '../assets/video/2323.mp4',
-                    title: 'İhracat Başarı Hikayesi',
-                    desc: 'Bloomberg HT de yayınlanan özel röportaj'
-                },
-                'food-tech': {
-                    src: '../assets/video/YUNUS ULUPINAR - FOOD-TECH EURASIA 2021 FUAR KONUŞMASI [_NjVGRimsVg].mp4',
-                    title: 'Food Tech',
-                    desc: 'Food Tech ürünlerinin detaylı tanıtımı'
-                }
-            };
-
-            videoItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    const videoKey = this.getAttribute('data-video');
-                    if (videoKey && videoData[videoKey]) {
-                        const video = videoData[videoKey];
-                        
-                        // Modal content'i doldur
-                        modalVideo.src = video.src;
-                        
-                        // Modal'ı göster
-                        videoModal.classList.add('active');
-                        document.body.style.overflow = 'hidden';
-                        
-                        // Video'yu oynat
-                        modalVideo.play();
-                    } else {
-                        console.log('Video opened:', this.querySelector('.media-title').textContent);
-                    }
-                });
-            });
-
-            // Modal kapatma işlemleri
-            function closeVideoModal() {
-                videoModal.classList.remove('active');
-                document.body.style.overflow = 'auto';
-                modalVideo.pause();
-                modalVideo.src = '';
-            }
-
-            closeModal.addEventListener('click', closeVideoModal);
-
-            // Modal overlay'e tıklayınca kapat
-            videoModal.addEventListener('click', function(e) {
-                if (e.target === this) {
-                    closeVideoModal();
-                }
-            });
-
-            // ESC tuşu ile kapat
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && videoModal.classList.contains('active')) {
-                    closeVideoModal();
-                }
-            });
-
-            // Enhanced Photo Gallery with better modal implementation
-            const initPhotoGallery = () => {
-                let currentImageIndex = 0;
-                let images = [];
-                
-                // Collect all photo items
-                const photoItems = document.querySelectorAll('.photo-item');
-                photoItems.forEach((item, index) => {
-                    const imgSrc = item.getAttribute('href');
-                    const imgAlt = item.querySelector('img').getAttribute('alt');
-                    images.push({ src: imgSrc, alt: imgAlt, index: index });
-                });
-
-                // Create enhanced modal
-                const createPhotoModal = () => {
-                    const modal = document.createElement('div');
-                    modal.className = 'photo-modal';
-                    modal.innerHTML = `
-                        <div class="photo-modal-overlay">
-                              <button class="photo-modal-close">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            <div class="photo-modal-content">
-                              
-                                <img class="photo-modal-image" src="" alt="">
-                                <div class="photo-counter">
-                                        <span class="current-num">1</span> / <span class="total-num">${images.length}</span>
-                                    </div>
-                                <div class="photo-modal-info">
-                                    
-                                   
-                                    
-                                </div>
-                                
-                            </div>
-                            <button class="photo-nav-btn photo-nav-prev">
-                                    <i class="fas fa-chevron-left"></i>
-                                </button>
-                                <button class="photo-nav-btn photo-nav-next">
-                                    <i class="fas fa-chevron-right"></i>
-                                </button>
-                        </div>
-                    `;
-                    document.body.appendChild(modal);
-                    return modal;
-                };
-
-                // Show image in modal
-                const showImage = (index) => {
-                    const modal = document.querySelector('.photo-modal') || createPhotoModal();
-                    const modalImg = modal.querySelector('.photo-modal-image');
-                    const currentNum = modal.querySelector('.current-num');
-                    const prevBtn = modal.querySelector('.photo-nav-prev');
-                    const nextBtn = modal.querySelector('.photo-nav-next');
-                    
-                    currentImageIndex = index;
-                    const image = images[index];
-                    
-                    // Update modal content
-                    modalImg.src = image.src;
-                    modalImg.alt = image.alt;
-                    currentNum.textContent = index + 1;
-                    
-                    // Update navigation buttons
-                    prevBtn.disabled = index === 0;
-                    nextBtn.disabled = index === images.length - 1;
-                    
-                    // Show modal
-                    modal.classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                };
-
-                // Close modal
-                const closeModal = () => {
-                    const modal = document.querySelector('.photo-modal');
-                    if (modal) {
-                        modal.classList.remove('active');
-                        document.body.style.overflow = 'auto';
-                    }
-                };
-
-                // Navigate images
-                const navigateImage = (direction) => {
-                    const newIndex = currentImageIndex + direction;
-                    if (newIndex >= 0 && newIndex < images.length) {
-                        showImage(newIndex);
-                    }
-                };
-
-                // Event listeners
-                photoItems.forEach((item, index) => {
-                    item.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        showImage(index);
-                    });
-                });
-
-                // Modal event listeners (delegated)
-                document.body.addEventListener('click', function(e) {
-                    const modal = document.querySelector('.photo-modal');
-                    if (!modal) return;
-
-                    if (e.target.matches('.photo-modal-close') || e.target.closest('.photo-modal-close')) {
-                        closeModal();
-                    } else if (e.target.matches('.photo-nav-prev') || e.target.closest('.photo-nav-prev')) {
-                        navigateImage(-1);
-                    } else if (e.target.matches('.photo-nav-next') || e.target.closest('.photo-nav-next')) {
-                        navigateImage(1);
-                    } else if (e.target.matches('.photo-modal-overlay')) {
-                        closeModal();
-                    }
-                });
-
-                // Keyboard navigation
-                document.addEventListener('keydown', function(e) {
-                    const modal = document.querySelector('.photo-modal');
-                    if (!modal || !modal.classList.contains('active')) return;
-
-                    switch(e.key) {
-                        case 'Escape':
-                            closeModal();
-                            break;
-                        case 'ArrowLeft':
-                            navigateImage(-1);
-                            break;
-                        case 'ArrowRight':
-                            navigateImage(1);
-                            break;
-                    }
-                });
-
-                // Touch/swipe support for mobile
-                let startX = 0;
-                let endX = 0;
-
-                document.addEventListener('touchstart', function(e) {
-                    const modal = document.querySelector('.photo-modal');
-                    if (!modal || !modal.classList.contains('active')) return;
-                    startX = e.touches[0].clientX;
-                });
-
-                document.addEventListener('touchend', function(e) {
-                    const modal = document.querySelector('.photo-modal');
-                    if (!modal || !modal.classList.contains('active')) return;
-                    endX = e.changedTouches[0].clientX;
-                    handleSwipe();
-                });
-
-                const handleSwipe = () => {
-                    const swipeThreshold = 50;
-                    const diff = startX - endX;
-                    
-                    if (Math.abs(diff) > swipeThreshold) {
-                        if (diff > 0) {
-                            // Swipe left - next image
-                            navigateImage(1);
-                        } else {
-                            // Swipe right - previous image
-                            navigateImage(-1);
-                        }
-                    }
-                };
-            };
-            
-            initPhotoGallery();
-
-            // Video and Audio player functionality
-            const mainVideo = document.getElementById('mainRadioVideo');
-            const audioPlayers = document.querySelectorAll('audio');
-
-            // Handle audio players
-            audioPlayers.forEach(audio => {
-                audio.addEventListener('play', function() {
-                    // Pause other audio players when one starts playing
-                    audioPlayers.forEach(otherAudio => {
-                        if (otherAudio !== this && !otherAudio.paused) {
-                            otherAudio.pause();
-                        }
-                    });
-                    
-                    // Pause main video if playing
-                    if (mainVideo && !mainVideo.paused) {
-                        mainVideo.pause();
-                    }
-                });
-            });
-
-            // Pause all audio when main video starts
-            if (mainVideo) {
-                mainVideo.addEventListener('play', function() {
-                    audioPlayers.forEach(audio => {
-                        if (!audio.paused) {
-                            audio.pause();
-                        }
-                    });
-                });
-            }
-        });
-    </script>
+    <script src="../assets/js/basindabiz.js"></script>
 </body>
 </html> 
