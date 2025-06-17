@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupProductGallery(product);
 
     // Ürün detayları yüklendikten sonra vitrini yükle
-    console.log("Ürün detayları yüklendi:", product); // Debug log
+    
     loadShowcase(product);
 });
 

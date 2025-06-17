@@ -2320,6 +2320,9 @@ footer {
 .markalar-img{
     background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/markalar.jpg');
 }
+.basinda-img{
+    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/basındabiz.jpg');
+}
 
 .kategori-img{
     background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/kategori.jpg');
@@ -2343,6 +2346,10 @@ footer {
     
     .kategori-img{
         background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/kategorimobil.jpg');
+    }
+
+    .basinda-img{
+        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/basındabizmobile.jpg');
     }
     
 }

@@ -1,0 +1,1105 @@
+/* Basında Biz Sayfası - INT KOREA */
+/* Ana stilden temel stilleri koruyarak özel tasarım */
+
+/* Hero Section - Ana stilin hero yapısını kullanır */
+.basinda-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../images/backgrounds/basinda-hero.jpg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.basinda-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.basinda-hero .subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Media Gallery Section */
+.press-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.media-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.media-item:hover {
+    transform: translateY(-10px);
+}
+
+.media-thumbnail {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+}
+
+.media-thumbnail img,
+.media-thumbnail video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.media-item:hover .media-thumbnail img,
+.media-item:hover .media-thumbnail video {
+    transform: scale(1.1);
+}
+
+.media-thumbnail video {
+    cursor: pointer;
+    pointer-events: none; /* Play button üzerine tıklamayı engeller */
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: rgba(0, 123, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.media-item:hover .play-button {
+    background: rgba(0, 123, 255, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.media-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.media-content {
+    padding: 1.5rem;
+}
+
+.media-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+.media-desc {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.media-date {
+    color: #007bff;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Radio Interview Section */
+.radio-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.main-interview {
+    margin-bottom: 4rem;
+}
+
+.interview-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.interview-card.featured {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+}
+
+.interview-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.radio-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.interview-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.radio-show {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.interview-meta {
+    display: flex;
+    gap: 2rem;
+}
+
+.duration, .date {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.interview-desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.audio-player {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+}
+
+.play-btn {
+    width: 60px;
+    height: 60px;
+    background: white;
+    color: #007bff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+}
+
+.audio-info span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.parts-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.parts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.part-item {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.part-item:hover {
+    transform: translateY(-5px);
+}
+
+.part-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.part-content {
+    flex: 1;
+}
+
+.part-content h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.part-duration {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.part-play-btn {
+    width: 45px;
+    height: 45px;
+    background: #f8f9fa;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.part-play-btn:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* Photo Gallery Section */
+.photo-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.photo-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    aspect-ratio: 4/3;
+}
+
+.photo-item:hover {
+    transform: translateY(-8px);
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photo-item:hover img {
+    transform: scale(1.1);
+}
+
+.photo-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 2rem 1.5rem 1.5rem;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.photo-item:hover .photo-overlay {
+    transform: translateY(0);
+}
+
+.photo-info h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.photo-info p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Media Responsive */
+@media (max-width: 768px) {
+    .basinda-hero {
+        height: 50vh;
+        padding: 0 1rem;
+    }
+    
+    .basinda-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .basinda-hero .subtitle {
+        font-size: 1rem;
+    }
+    
+    .media-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .media-content {
+        padding: 1.2rem;
+    }
+    
+    .media-title {
+        font-size: 1.1rem;
+    }
+    
+    .interview-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .radio-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .interview-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .interview-meta {
+        justify-content: center;
+    }
+    
+    .parts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .basinda-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .press-section,
+    .radio-section,
+    .photo-section {
+        padding: 60px 0;
+    }
+    
+    .media-content {
+        padding: 1rem;
+    }
+    
+    .interview-card {
+        padding: 1.5rem;
+    }
+    
+    .audio-player {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .part-item {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .part-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* Loading Animation */
+.press-item.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Filter Buttons */
+.press-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    background: transparent;
+    color: #007bff;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #007bff;
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .press-filters {
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Video Player Styles */
+.video-player {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-player video {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+}
+
+/* Interview Thumbnail Styles */
+.interview-thumbnail {
+    position: relative;
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.interview-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.interview-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.play-overlay:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+/* Audio Parts List Layout */
+.parts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.audio-part {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid #e1e8ed;
+    transition: all 0.3s ease;
+}
+
+.audio-part:hover {
+    transform: translateY(-3px);
+    border-color: #007bff;
+}
+
+.audio-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.audio-header .part-number {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.audio-header h4 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.audio-player audio {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+}
+
+.audio-player audio::-webkit-media-controls-panel {
+    background-color: #f8f9fa;
+    border-radius: 25px;
+    border: 1px solid #e1e8ed;
+}
+
+.audio-player audio::-webkit-media-controls-play-button {
+    background-color: #007bff;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.audio-player audio::-webkit-media-controls-current-time-display,
+.audio-player audio::-webkit-media-controls-time-remaining-display {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .interview-thumbnail {
+        width: 80px;
+        height: 60px;
+    }
+    
+    .play-overlay {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    
+    .video-player video {
+        max-height: 250px;
+    }
+    
+    .parts-list {
+        padding: 0 10px;
+    }
+    
+    .audio-part {
+        padding: 15px;
+    }
+    
+    .audio-header {
+        gap: 10px;
+    }
+    
+    .audio-header .part-number {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    .audio-header h4 {
+        font-size: 16px;
+    }
+    
+    .audio-player audio {
+        height: 45px;
+    }
+}
+
+/* Video Modal Styles */
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.video-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 95vw;
+    max-height: 95vh;
+    background: transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-modal.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease;
+    z-index: 10001;
+    backdrop-filter: blur(5px);
+}
+
+.modal-close:hover {
+    background: rgba(0, 0, 0, 0.9);
+    border-color: white;
+    transform: scale(1.1);
+    backdrop-filter: blur(8px);
+}
+
+.modal-video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-video-container video {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .modal-overlay {
+        padding: 15px;
+    }
+    
+    .modal-content {
+        max-width: 98vw;
+        max-height: 98vh;
+    }
+    
+    .modal-close {
+        top: 12px;
+        right: 12px;
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    .modal-video-container {
+        max-width: 100%;
+    }
+    
+    .modal-video-container video {
+        max-height: 75vh;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-overlay {
+        padding: 10px;
+    }
+    
+    .modal-close {
+        top: 10px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+    
+    .modal-video-container video {
+        max-height: 70vh;
+        border-radius: 8px;
+    }
+}
+
+/* Video loading states */
+.modal-video-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 1;
+}
+
+.modal-video-container video[src]:not([src=""]) + .modal-video-container::before {
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Photo Gallery Modal Styles */
+.photo-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.photo-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.photo-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.photo-modal-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.photo-modal.active .photo-modal-content {
+    transform: scale(1);
+}
+
+.photo-modal-image {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.photo-modal-close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    z-index: 10002;
+}
+
+.photo-modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.1);
+}
+
+.photo-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    z-index: 10001;
+}
+
+.photo-nav-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.photo-nav-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.photo-nav-prev {
+    left: 2rem;
+}
+
+.photo-nav-next {
+    right: 2rem;
+}
+
+.photo-modal-info {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+}
+
+.photo-modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.photo-modal-desc {
+    font-size: 1rem;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.photo-counter {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    opacity: 0.8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Photo Modal Responsive Styles */
+@media (max-width: 768px) {
+    .photo-modal-overlay {
+        padding: 1rem;
+    }
+    
+    .photo-nav-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .photo-nav-prev {
+        left: 1rem;
+    }
+    
+    .photo-nav-next {
+        right: 1rem;
+    }
+    
+    .photo-modal-close {
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .photo-modal-image {
+        max-height: 70vh;
+    }
+    
+    .photo-modal-info {
+        bottom: -60px;
+    }
+    
+    .photo-modal-title {
+        font-size: 1.2rem;
+    }
+    
+    .photo-modal-desc {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-nav-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    .photo-modal-close {
+        top: 10px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .photo-modal-image {
+        max-height: 65vh;
+    }
+    
+    .photo-counter {
+        top: -40px;
+        font-size: 0.9rem;
+    }
+}
+
+ 

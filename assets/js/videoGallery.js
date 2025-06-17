@@ -34,23 +34,23 @@ document.addEventListener('DOMContentLoaded', function() {
             type: 'youtube'
         }
         ,
-        // {
-        //     id: 'euNx68k6dRo',
-        //     title: 'MANTI MAKİNESİ',
-        //     type: 'youtube'
-        // }
-        // ,
-        // {
-        //     id: 'DxmkWNZV18',
-        //     title: 'OTOMATİK ÇÖP ŞİŞ MAKİNASI',
-        //     type: 'youtube'
-        // }
-        // ,
-        // {
-        //     id: 'AwOMQ1Yxyo',
-        //     title: 'OTOMATİK ÇÖP ŞİŞ MAKİNASI 2',
-        //     type: 'youtube'
-        // }
+        {
+            id: 'I2Gq8Qdz24Y',
+            title: 'MANTI MAKİNESİ',
+            type: 'youtube'
+        }
+        ,
+        {
+            id: '-DxmkWNZV18',
+            title: 'OTOMATİK ÇÖP ŞİŞ MAKİNASI',
+            type: 'youtube'
+        }
+        ,
+        {
+            id: '-AwOMQ1Yxyo',
+            title: 'OTOMATİK ÇÖP ŞİŞ MAKİNASI 2',
+            type: 'youtube'
+        }
         ,
         {
             id: 'nwmTFzlEgxU',
