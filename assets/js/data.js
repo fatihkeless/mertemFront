@@ -129,9 +129,11 @@ window.products = {
             name: 'Pide Lahmacun Pizza Hattı',
             description: 'Profesyonel pide, lahmacun ve pizza üretim hattı.',
             fullDescription: 'Pide Lahmacun Pizza Hattı hakkında detaylı bilgi için bizimle iletişime geçiniz. Mertem A.Ş. olarak siz değerli müşterilemize herzaman en kaliteli ürünleri sunmak vazgeçilmez ilkemizdir.',
-            image: '/assets/images/1.png',
+            image: '/assets/images/urunimages/Börek-Lahmacun-Pizza hatları 2.jpg',
             productImages: [
-                '/assets/images/1.png',
+                '/assets/images/urunimages/Börek-Lahmacun-Pizza hatları 2.jpg',
+                '/assets/images/urunimages/Börek-Lahmacun-Pizza hatları 3.jpg',
+                '/assets/images/urunimages/Börek-Lahmacun-Pizza hatları 4.jpg',
                 '/assets/images/urunimages/yeniresimler/Pide Lahmacun Pizza Hattı new 1.jpeg',
                 '/assets/images/urunimages/yeniresimler/Pide Lahmacun Pizza Hattı new 2.jpeg',
                 '/assets/images/urunimages/yeniresimler/Pide Lahmacun Pizza Hattı new 3.jpeg',
