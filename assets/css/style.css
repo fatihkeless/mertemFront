@@ -10,6 +10,10 @@ body {
     color: #333;
     line-height: 1.6;
 }
+.turquoise-section{
+    background: turquoise !important;
+    background-color: turquoise !important;
+}
 
 /* Navbar Styles */
 header {
@@ -31,7 +35,7 @@ header {
 }
 
 .nav-brand img {
-    height: 40px;
+    height: 50px;
     width: auto;
 }
 
@@ -63,7 +67,7 @@ header {
 }
 
 .nav-link:hover {
-    color: #007bff;
+    color: turquoise;
 }
 
 /* Hamburger Menu */
@@ -127,8 +131,8 @@ header {
 }
 
 .dropdown-link:hover {
-    background-color: #f8f9fa;
-    color: #007bff;
+    background-color: rgba(64, 224, 208, 0.1);
+    color: turquoise;
 }
 
 .dropdown .nav-link i {
@@ -307,7 +311,7 @@ footer {
     bottom: 0;
     width: 50px;
     height: 2px;
-    background: #007bff;
+    background: #40e0d0;
 }
 
 /* Hızlı Linkler */
@@ -330,7 +334,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #007bff;
+    color: #40e0d0;
 }
 
 /* İletişim Bilgileri */
@@ -348,7 +352,7 @@ footer {
 }
 
 .footer-contact i {
-    color: #007bff;
+    color: #40e0d0;
     width: 20px;
 }
 
@@ -359,7 +363,7 @@ footer {
 }
 
 .footer-contact a:hover {
-    color: #007bff;
+    color: #40e0d0;
 }
 
 /* Sosyal Medya */
@@ -382,7 +386,7 @@ footer {
 }
 
 .social-link:hover {
-    background: #007bff;
+    background: #40e0d0;
     transform: translateY(-3px);
 }
 
@@ -487,14 +491,14 @@ footer {
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #40e0d0;
     color: #fff;
     border: 2px solid #007bff;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: #40e0d0;
+    border-color: #40e0d0;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
 }
@@ -558,10 +562,15 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-.slide-description p {
+.slide-description p  {
     font-size: 1.8rem;
     line-height: 1.6;
     margin: 0.8rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.slide-description a{
     opacity: 0;
     transform: translateY(20px);
 }
@@ -660,7 +669,7 @@ footer {
 }
 
 .sldier_bgcolor::before{
-    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5));
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35));
 
 }
 
@@ -691,7 +700,10 @@ footer {
 /* About Section */
 .about-section {
     padding: 60px 0 0 0;
+   
 }
+
+
 
 .about-content {
     max-width: 800px;
@@ -787,7 +799,7 @@ footer {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: #007bff;
+    color: turquoise;
     text-decoration: none;
     font-weight: 500;
     font-size: 0.95rem;
@@ -795,7 +807,7 @@ footer {
 }
 
 .product-detail-btn:hover {
-    color: #0056b3;
+    color: rgb(0, 255, 229);
 }
 
 .product-detail-btn i {
@@ -940,13 +952,13 @@ footer {
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #40e0d0;
     color: #fff;
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #40e0d0;
 }
 
 .btn-outline {
@@ -1193,7 +1205,7 @@ footer {
 }
 
 .category-icon {
-    background: linear-gradient(45deg, #007bff, #00a6ff);
+    background: linear-gradient(-45deg, rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35));
     color: #fff;
     padding: 30px;
     text-align: center;
@@ -1224,7 +1236,7 @@ footer {
 }
 
 .category-link {
-    color: #007bff;
+    color: turquoise;
     font-weight: 500;
     display: inline-flex;
     align-items: center;
@@ -1457,7 +1469,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: linear-gradient(45deg, #007bff, #00a6ff);
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35));
     color: white;
     width: 40px;
     height: 40px;
@@ -1508,17 +1520,17 @@ footer {
     text-decoration: none;
     border-radius: 25px;
     transition: all 0.3s ease;
-    background: #f8f9fa;
+    background:rgba(64, 224, 208, 0.281);
     font-weight: 500;
 }
 
 .filter-btn:hover {
-    background: #007bff;
+    background: turquoise;
     color: #fff;
 }
 
 .filter-btn.active {
-    background: #007bff;
+    background: turquoise;
     color: #fff;
 }
 
@@ -1575,12 +1587,12 @@ footer {
 }
 
 .breadcrumb a {
-    color: #007bff;
+    color: turquoise;
     transition: color 0.3s ease;
 }
 
 .breadcrumb a:hover {
-    color: #0056b3;
+    color: rgb(4, 82, 74);
 }
 
 .breadcrumb i {
@@ -1770,7 +1782,7 @@ footer {
 
 #thumbnail-slider .splide__slide.is-active {
     opacity: 1;
-    border: 2px solid #007bff;
+    border: 2px solid turquoise;
 }
 
 #thumbnail-slider .splide__slide img {
@@ -1790,6 +1802,7 @@ footer {
 
 .splide__arrow:hover {
    cursor: pointer;
+   background: turquoise;
 }
 
 
@@ -1903,7 +1916,7 @@ footer {
     align-items: center;
     gap: 10px;
     padding: 15px 30px;
-    background: linear-gradient(45deg, #007bff, #00a6ff);
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35));
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -2056,7 +2069,7 @@ footer {
     display: inline-flex !important;
     align-items: center !important;
     gap: 8px !important;
-    color: #007bff !important;
+    color: turquoise !important;
     text-decoration: none !important;
     font-weight: 500 !important;
     font-size: 0.95rem !important;
@@ -2081,7 +2094,7 @@ footer {
 
 /* Hover durumu için */
 .showcase-link:hover {
-    color: #0056b3 !important;
+    color: rgb(10, 85, 77) !important;
     text-decoration: none !important;
 }
 
@@ -2221,7 +2234,7 @@ footer {
 }
 
 #product-slider .splide__pagination__page.is-active {
-    background: #007bff;
+    background: turquoise;
     transform: scale(1.3);
     opacity: 1;
 }
@@ -2254,7 +2267,7 @@ footer {
 }
 
 .showcase-pagination .splide__pagination__page.is-active {
-    background: #007bff !important;
+    background: turquoise !important;
     transform: scale(1.4) !important;
     opacity: 1 !important;
 }
@@ -2276,7 +2289,7 @@ footer {
 }
 
 .showcase-arrow:hover {
-    background: #007bff !important;
+    background: turquoise !important;
     cursor: pointer;
 }
 
@@ -2304,7 +2317,7 @@ footer {
 /* Hero Bölümü */
 .about-hero,
 .contact-hero {
-    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/iletisim.jpg');
+    background:  linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/iletisim.jpg');
     background-position: center;
     color: #fff;
     text-align: center;
@@ -2312,46 +2325,46 @@ footer {
 }
 
 .video-img {
-    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/video.jpg');
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/video.jpg');
 }
 
 .about-img{
-    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/hakkımızda.jpg');
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/hakkımızda.jpg');
 }
 
 .markalar-img{
-    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/markalar.jpg');
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/markalar.jpg');
 }
 .basinda-img{
-    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/basındabiz.jpg');
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/basındabiz.jpg');
 }
 
 .kategori-img{
-    background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/kategori.jpg');
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/kategori.jpg');
 }
 
 @media (max-width: 768px) {
     .contact-hero {
-        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/iletisim.jpg');
+        background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/iletisim.jpg');
     }
     .video-img {
-        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/videomobil.jpg');
+        background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/videomobil.jpg');
     }
     
     .about-img{
-        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/hakkımızdamobil.jpg');
+        background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/hakkımızdamobil.jpg');
     }
     
     .markalar-img{
-        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/markalarmobil.jpg');
+        background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/markalarmobil.jpg');
     }
     
     .kategori-img{
-        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/kategorimobil.jpg');
+        background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/kategorimobil.jpg');
     }
 
     .basinda-img{
-        background: linear-gradient(rgba(0, 147, 181, 0.5), rgba(0, 147, 181, 0.5)), url('../images/baslik/basındabizmobile.jpg');
+        background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/basındabizmobile.jpg');
     }
     
 }
@@ -2765,13 +2778,13 @@ footer {
 
 .section-header i {
     font-size: 24px;
-    color: #007bff;
+    color: turquoise;
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 123, 255, 0.1);
+    background: rgba(64, 224, 208, 0.281);
     border-radius: 12px;
 }
 
@@ -2886,14 +2899,14 @@ footer {
 
 .catalog-btn i {
     font-size: 1.5rem;
-    color: #007bff;
+    color: turquoise;
     transition: transform 0.3s ease;
 }
 
 .catalog-btn:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    border-color: #007bff;
+    border-color: turquoise;
 }
 
 .catalog-btn:hover i {
@@ -2901,7 +2914,7 @@ footer {
 }
 
 .catalog-btn:hover span {
-    color: #007bff;
+    color: turquoise;
 }
 
 /* Responsive düzenlemeler */
@@ -3241,7 +3254,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.9);
+    background: turquoise;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -3257,7 +3270,7 @@ footer {
 }
 
 .play-icon i {
-    color: #1613bd;
+    color: turquoise;
     font-size: 24px;
 }
 
@@ -3444,7 +3457,7 @@ footer {
 .card-icon {
     width: 50px;
     height: 50px;
-    background: #007bff;
+    background: turquoise;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -3472,7 +3485,7 @@ footer {
 }
 
 .card-content a:hover {
-    color: #007bff;
+    color: turquoise;
 }
 
 .phone-numbers {
@@ -3604,7 +3617,7 @@ footer {
 
 .service-icon {
     font-size: 2.5rem;
-    color: #0056b3;
+    color: #40e0d0;
     margin-bottom: 20px;
 }
 
@@ -3727,7 +3740,7 @@ footer {
 }
 
 .video-thumbnail:hover .play-icon {
-    background: rgba(0, 0, 0, 0.9);
+    background: turquoise;
     transform: translate(-50%, -50%) scale(1.1);
 }
 
@@ -4115,6 +4128,8 @@ footer {
 }
 
 
+
+
 .contact-map {
     width: 100%;
     height: 800px;
@@ -4126,7 +4141,6 @@ footer {
     height: 100%;
     border: none;
 }
-
 
 
 

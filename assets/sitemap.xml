@@ -109,246 +109,363 @@
     <priority>0.5</priority>
   </url>
 
-  <!-- Ürün Sayfaları - Unlu Mamul Kategorisi -->
+  <!-- Sufram -->
+  <url>
+    <loc>https://mertem.com.tr/sufram/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Lorapack -->
+  <url>
+    <loc>https://mertem.com.tr/lorapack/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Pintro -->
+  <url>
+    <loc>https://mertem.com.tr/pintro/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- ICETRO -->
+
+  <url>
+    <loc>https://mertem.com.tr/icetro/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+
+  <!-- Valtek -->
+  <url>
+    <loc>https://mertem.com.tr/valtek/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+
+  <!-- Dolfill -->
+  <url>
+    <loc>https://mertem.com.tr/dolfill/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+
+  <!-- Kanka -->
+  <url>
+    <loc>https://mertem.com.tr/kanka/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Elinle -->
+  <url>
+    <loc>https://mertem.com.tr/elinle/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Aston Foods -->
+  <url>
+    <loc>https://mertem.com.tr/aston-foods/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=1&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=2&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=3&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=4&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=5&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=6&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=7&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=8&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=9&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=10&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=11&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=12&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
-  <url>
-    <loc>https://mertem.com.tr/urunlerimiz/?id=13&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://mertem.com.tr/urunlerimiz/?id=14&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://mertem.com.tr/urunlerimiz/?id=15&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://mertem.com.tr/urunlerimiz/?id=16&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://mertem.com.tr/urunlerimiz/?id=17&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://mertem.com.tr/urunlerimiz/?id=18&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://mertem.com.tr/urunlerimiz/?id=19&category=unlu-mamul</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Ürün Sayfaları - Restorant Kategorisi -->
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=1&category=restorant</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=2&category=restorant</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=3&category=restorant</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-
-  <!-- Ürün Sayfaları - Tatlı Kategorisi -->
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=4&category=restorant</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=5&category=restorant</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=6&category=restorant</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=7&category=restorant</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=8&category=restorant</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=1&category=tatli</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=2&category=tatli</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-
-  <!-- Ürün Sayfaları - Gıda Kategorisi -->
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=3&category=tatli</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=4&category=tatli</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=5&category=tatli</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=6&category=tatli</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=7&category=tatli</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=8&category=tatli</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=1&category=paketleme</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=2&category=paketleme</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=3&category=paketleme</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=4&category=paketleme</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=5&category=paketleme</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=1&category=gida</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=2&category=gida</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=3&category=gida</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=4&category=gida</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://mertem.com.tr/urunlerimiz/?id=5&category=gida</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=1&category=endustriyel</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://mertem.com.tr/urunlerimiz/?id=6&category=gida</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=2&category=endustriyel</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://mertem.com.tr/urunlerimiz/?id=7&category=gida</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=3&category=endustriyel</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://mertem.com.tr/urunlerimiz/?id=8&category=gida</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=4&category=endustriyel</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://mertem.com.tr/urunlerimiz/?id=9&category=gida</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=5&category=endustriyel</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://mertem.com.tr/urunlerimiz/?id=10&category=gida</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=6&category=endustriyel</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=7&category=endustriyel</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=8&category=endustriyel</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=9&category=endustriyel</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mertem.com.tr/urunlerimiz/?id=10&category=endustriyel</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>

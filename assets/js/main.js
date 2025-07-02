@@ -58,12 +58,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initialize Splide slider
     var splide = new Splide('#image-slider', {
-        type: 'fade',
+        type: 'loop',
+        perPage: 1,
         cover: true,
         height: "85vh",
-        rewind: false,
-        autoplay: false,
-        interval: 30000,
+        animation: 'fade',
+        autoplay: true,
+        interval: 3000,
         pauseOnHover: false,
         arrows: false,
         pagination: true,

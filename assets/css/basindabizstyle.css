@@ -84,7 +84,7 @@
     transform: translate(-50%, -50%);
     width: 70px;
     height: 70px;
-    background: rgba(0, 123, 255, 0.9);
+    background: #40e0d0;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@
 }
 
 .media-item:hover .play-button {
-    background: rgba(0, 123, 255, 1);
+    background: turquoise;
     transform: translate(-50%, -50%) scale(1.1);
 }
 
@@ -147,14 +147,14 @@
 }
 
 .interview-card {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35));
     border-radius: 20px;
     padding: 2.5rem;
     transition: all 0.3s ease;
 }
 
 .interview-card.featured {
-    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35));
     color: white;
 }
 
@@ -269,7 +269,7 @@
 .part-number {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35));;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -353,7 +353,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35));;
     color: white;
     padding: 2rem 1.5rem 1.5rem;
     transform: translateY(100%);
@@ -477,7 +477,7 @@
 }
 
 .skeleton {
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35));;
     background-size: 200% 100%;
     animation: loading 1.5s infinite;
 }
@@ -604,7 +604,7 @@
 
 .audio-part:hover {
     transform: translateY(-3px);
-    border-color: #007bff;
+    border-color: turquoise;
 }
 
 .audio-header {
@@ -615,7 +615,7 @@
 }
 
 .audio-header .part-number {
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35));;
     color: white;
     width: 40px;
     height: 40px;
@@ -649,7 +649,7 @@
 }
 
 .audio-player audio::-webkit-media-controls-play-button {
-    background-color: #007bff;
+    background-color: turquoise;
     border-radius: 50%;
     margin-left: 10px;
 }

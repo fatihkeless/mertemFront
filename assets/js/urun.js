@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'Kategori.html';
         return;
     }
+    
 
-    console.log("Ürün Uzunluk:", product.productImages.length);
 
 
     // Sayfa başlığını güncelle
@@ -142,6 +142,36 @@ function findProduct(id, category) {
     return window.products[category].find(p => p.id.toString() === id);
 }
 
+function getTotalProductCount() {
+    let total = 0;
+    for (const category in window.products) {
+        total += window.products[category].length;
+    }
+    return total;
+}
+
+function generateSitemapEntries(baseUrl = 'https://mertem.com.tr/urunlerimiz/') {
+    let xml = '';
+
+    for (const category in window.products) {
+        const products = window.products[category];
+        for (const product of products) {
+            const url = `${baseUrl}?id=${product.id}&category=${category}`;
+            xml += `
+  <url>
+    <loc>${url}</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>`;
+        }
+    }
+
+    return `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${xml}
+</urlset>`;
+}
+
+
 function updateBreadcrumb(productName, categoryName) {
     const breadcrumb = document.querySelector('.breadcrumb');
     if (breadcrumb) {
@@ -164,6 +194,7 @@ function getCategoryName(categorySlug) {
         'tatli': 'Tatlı Ürünleri',
         'paketleme': 'Paketleme Ürünleri',
         'gida': 'Gıda Makineleri',
+        'endustriyel': 'Endüstriyel Makinalar',
         'tum-urunler': 'Tüm Ürünler'
     };
     return categories[categorySlug] || categorySlug;
@@ -176,6 +207,7 @@ function getCategorySlug(categoryName) {
         'Tatlı Ürünleri': 'tatli',
         'Paketleme Ürünleri': 'paketleme',
         'Gıda Makineleri': 'gida',
+        'Endüstriyel Makinalar': 'endustriyel',
         'Tüm Ürünler': 'tum-urunler'
     };
     return slugs[categoryName] || categoryName.toLowerCase();
@@ -294,4 +326,5 @@ function loadShowcase(currentProduct) {
 // Fonksiyonu global scope'ta tanımla
 window.setProductAndNavigate = function(product) {
     localStorage.setItem('selectedProduct', JSON.stringify(product));
+
 }; 
