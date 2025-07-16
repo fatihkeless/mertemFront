@@ -93,93 +93,9 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Arkan Felez -->
-  <url>
-    <loc>https://mertem.com.tr/arkan-felez/</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
   
-  <!-- INT Korea -->
   <url>
-    <loc>https://mertem.com.tr/int-korea/</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Sufram -->
-  <url>
-    <loc>https://mertem.com.tr/sufram/</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Lorapack -->
-  <url>
-    <loc>https://mertem.com.tr/lorapack/</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Pintro -->
-  <url>
-    <loc>https://mertem.com.tr/pintro/</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- ICETRO -->
-
-  <url>
-    <loc>https://mertem.com.tr/icetro/</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-
-  <!-- Valtek -->
-  <url>
-    <loc>https://mertem.com.tr/valtek/</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-
-  <!-- Dolfill -->
-  <url>
-    <loc>https://mertem.com.tr/dolfill/</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-
-  <!-- Kanka -->
-  <url>
-    <loc>https://mertem.com.tr/kanka/</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Elinle -->
-  <url>
-    <loc>https://mertem.com.tr/elinle/</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Aston Foods -->
-  <url>
-    <loc>https://mertem.com.tr/aston-foods/</loc>
+    <loc>https://mertem.com.tr/markalarimiz/</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
