@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
         height: "85vh",
         animation: 'fade',
         autoplay: true,
-        interval: 3000,
+        interval: 8000,
         pauseOnHover: false,
         arrows: false,
         pagination: true,

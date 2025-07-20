@@ -27,10 +27,10 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1rem 2rem;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -2417,6 +2417,9 @@ footer {
 .video-img {
     background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/video.jpg');
 }
+.gecmisten-img{
+    background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/history.jpg');
+}
 
 .about-img{
     background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/hakkımızda.jpg');
@@ -2439,6 +2442,9 @@ footer {
     }
     .video-img {
         background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/videomobil.jpg');
+    }
+    .gecmisten-img{
+        background: linear-gradient(rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35)), url('../images/baslik/historymobile.jpg');
     }
     
     .about-img{
@@ -2855,9 +2861,6 @@ footer {
     transition: transform 0.3s ease;
 }
 
-.about-section-item:hover {
-    transform: translateY(-5px);
-}
 
 .section-header {
     display: flex;
