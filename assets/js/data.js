@@ -187,6 +187,19 @@ window.products = {
             ],
             stock: 20 ,
             category: 'unlu-mamul'
+        },
+        {
+            id: 13,
+            name: "İki Renkli Kurabiye Makinası",
+            description: "Profesyonel çift renkli kurabiye makinası",
+            fullDescription: "İki farklı renkte hamuru aynı anda işleyerek desenli kurabiyeler üretir. Özel tasarım kurabiyeler için ideal makina.",
+            image : '/assets/images/urunimages/yeniresimler/iki renkli.jpg',
+            productImages : [
+                '/assets/images/urunimages/yeniresimler/iki renkli.jpg',
+            ],
+            stock : 20,
+            category: 'unlu-mamul'
+        
         }
     ],
     "restorant": [
@@ -660,20 +673,20 @@ window.products = {
             stock: 20,
             category: 'endustriyel'
         },
-        {
-            id: 7,
-            name: 'Lavaş Yufka Hattı',
-            description: 'Profesyonel lavaş yufka üretim hattı.',
-            fullDescription: 'Lavaş Yufka Hattı hakkında detaylı bilgi için bizimle iletişime geçiniz. Mertem A.Ş. olarak siz değerli müşterilemize herzaman en kaliteli ürünleri sunmak vazgeçilmez ilkemizdir.',
-            image: '/assets/images/1.png',
-            productImages: [
-                '/assets/images/1.png',
-                '/assets/images/urunimages/yeniresimler/Lavaş Yufka Hattı new 2.jpeg',
-                '/assets/images/urunimages/yeniresimler/Lavaş Yufka Hattı new 3.jpeg',
-            ],
-            stock: 20,
-            category: 'endustriyel'
-        },
+        // {
+        //     id: 7,
+        //     name: 'Lavaş Yufka Hattı',
+        //     description: 'Profesyonel lavaş yufka üretim hattı.',
+        //     fullDescription: 'Lavaş Yufka Hattı hakkında detaylı bilgi için bizimle iletişime geçiniz. Mertem A.Ş. olarak siz değerli müşterilemize herzaman en kaliteli ürünleri sunmak vazgeçilmez ilkemizdir.',
+        //     image: '/assets/images/1.png',
+        //     productImages: [
+        //         '/assets/images/1.png',
+        //         '/assets/images/urunimages/yeniresimler/Lavaş Yufka Hattı new 2.jpeg',
+        //         '/assets/images/urunimages/yeniresimler/Lavaş Yufka Hattı new 3.jpeg',
+        //     ],
+        //     stock: 20,
+        //     category: 'endustriyel'
+        // },
         {
             id: 8,
             name: 'Spiral Mikser',
