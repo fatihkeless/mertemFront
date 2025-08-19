@@ -54,12 +54,23 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
 
-    // Slider'ı oluştur
-    setupProductGallery(product);
+       // Slider'ı oluştur
+       setupProductGallery(product);
 
-    // Ürün detayları yüklendikten sonra vitrini yükle
-    
-    loadShowcase(product);
+           // PDF butonu (sadece product.pdf varsa)
+            const contactDiv = document.querySelector('.product-contact');
+            if (product.pdf && contactDiv) {
+                const pdfLink = document.createElement('a');
+                pdfLink.href = product.pdf;
+                pdfLink.target = '_blank';
+                pdfLink.rel = 'noopener';
+                pdfLink.className = 'contact-btn';
+                pdfLink.innerHTML = '<i class="fas fa-file-pdf"></i> Ürün Kataloğu';
+                contactDiv.appendChild(pdfLink);
+            }
+   
+       // Ürün detayları yüklendikten sonra vitrini yükle
+       loadShowcase(product);
 });
 
 function setupProductGallery(product) {

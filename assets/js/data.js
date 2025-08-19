@@ -388,6 +388,7 @@ window.products = {
                 '/assets/images/urunimages/yeniresimler/Dondurma Makinası new 2.jpeg',
                 '/assets/images/urunimages/yeniresimler/Dondurma Makinası new 3.jpeg',
             ],
+            pdf: '/assets/pdf/Dondurma.pdf',
             stock: 20,
             category: 'tatli'
         },
