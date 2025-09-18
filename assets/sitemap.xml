@@ -101,12 +101,12 @@
     <priority>0.5</priority>
   </url>
 
-  <url>
+  <!-- <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=1&category=unlu-mamul</loc>
     <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
+  </url> -->
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=2&category=unlu-mamul</loc>
     <lastmod>2025-07-02</lastmod>
@@ -161,11 +161,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-  <url>
+  <!-- <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=11&category=unlu-mamul</loc>
     <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.5</priority> -->
   </url>
   <url>
     <loc>https://mertem.com.tr/urunlerimiz/?id=12&category=unlu-mamul</loc>

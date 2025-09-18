@@ -27,10 +27,10 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    max-width: 1600px;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -353,7 +353,7 @@ footer {
 
 .footer-contact i {
     color: #40e0d0;
-    width: 20px;
+    width: 2rem;
 }
 
 .footer-contact a {
@@ -3548,8 +3548,8 @@ footer {
 }
 
 .card-icon {
-    width: 50px;
-    height: 50px;
+    width: 3em;
+    height: 3em;
     background: turquoise;
     border-radius: 50%;
     display: flex;
@@ -3690,7 +3690,7 @@ footer {
 
 .services-grid2{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
     margin-top: 0;
 }
@@ -3913,17 +3913,16 @@ footer {
 
 /* genel 2k düzenlemeleri */
 
-@media (min-width: 2160px) {
+@media (min-width: 2560px) {
     html {
         font-size: 1.5em; /* 2em yerine daha dengeli bir oran */
     }
 
     /* Container ve Layout Düzenlemeleri */
-    .navbar,
     .container,
     .video-slider,
     .contact-grid {
-        max-width: 1800px; /* Increased from 1800px for better 2K display */
+        max-width: 2100px; /* Increased from 1800px for better 2K display */
     }
 
     /* Header ve Navigation */
@@ -4030,8 +4029,8 @@ footer {
         gap: 40px;
     }
     .services-grid2s {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr) ) !important;
-        gap: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr) ) !important;
+        gap: 60px;
     }
 
     .service-card {
@@ -4236,7 +4235,303 @@ footer {
 }
 
 
+.brands-grid {
+    grid-template-columns: repeat(auto-fill, minmax(520px, 1fr)); /* Responsive grid */
+    gap: 40px; /* Space between cards */
+    max-width: 2100px; /* Limit the width */
+   
+}
+
+.brand-card {
+    
+    padding: 40px; /* Padding inside cards */
+}
+
+.brand-logo {
+  
+    max-height: 150px;
+}
 
 
     
+}
+
+
+/* 4K için responsive düzenlemeler */
+
+@media (min-width: 3840px) {
+    html {
+        font-size: 2em; /* 2em yerine daha dengeli bir oran */
+    }
+/* Container ve Layout Düzenlemeleri */
+.container,
+.video-slider,
+.contact-grid {
+    max-width: 2730px; /* 2100px → 2730px */
+}
+
+/* Header ve Navigation */
+.nav-brand img {
+    height: 78px; /* 60px → 78px */
+}
+
+/* Slider Düzenlemeleri */
+.slide-description p:first-child {
+    font-size: 5.2rem; /* 4rem → 5.2rem */
+}
+
+.slide-description p {
+    font-size: 2.6rem; /* 2rem → 2.6rem */
+}
+
+.slider-btn {
+    padding: 26px 52px; /* 20px 40px → 26px 52px */
+    font-size: 1.95rem; /* 1.5rem → 1.95rem */
+    border-radius: 52px; /* 40px → 52px */
+}
+
+/* Video Galeri */
+.video-gallery .container {
+    max-width: 2340px; /* 1800px → 2340px */
+    padding: 0 52px; /* 40px → 52px */
+}
+
+.video-card {
+    width: 520px; /* 400px → 520px */
+    border-radius: 26px; /* 20px → 26px */
+}
+
+.video-grid .video-card {
+    width: 650px; /* 500px → 650px */
+    margin-top: 2.6rem; /* 2rem → 2.6rem */
+}
+
+.video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(620px, 1fr)); /* 400px → 520px */
+}
+
+.video-title {
+    font-size: 1.7rem; /* 1.3rem → 1.7rem */
+    padding: 78px; /* 60px → 78px */
+}
+
+.play-icon {
+    width: 104px; /* 80px → 104px */
+    height: 104px;
+}
+
+.play-icon i {
+    font-size: 42px; /* 32px → 42px */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 78px !important; /* 60px → 78px */
+    height: 78px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 21px; /* 16px → 21px */
+    height: 21px;
+}
+
+/* Section Başlıkları */
+.section-title {
+    font-size: 3.25rem; /* 2.5rem → 3.25rem */
+    margin-bottom: 78px; /* 60px → 78px */
+}
+
+/* Servis Kartları */
+.services-section .container {
+    max-width: 2340px; /* 1800px → 2340px */
+    padding: 0 52px; /* 40px → 52px */
+}
+
+.services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr)) !important; /* 400px → 520px */
+    gap: 52px; /* 40px → 52px */
+}
+.services-grid2s {
+    grid-template-columns: repeat(auto-fit, minmax(720px, 1fr)) !important; /* 400px → 520px */
+    gap: 82px; /* 40px → 52px */
+}
+
+.service-card {
+    padding: 52px; /* 40px → 52px */
+}
+
+.service-icon {
+    font-size: 4.55rem; /* 3.5rem → 4.55rem */
+    margin-bottom: 39px; /* 30px → 39px */
+}
+
+/* Ürün Kartları */
+.products-section .container {
+    max-width: 2340px; /* 1800px → 2340px */
+    padding: 0 52px;
+}
+
+.products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(585px, 1fr)); /* 450px → 585px */
+    gap: 52px; /* 40px → 52px */
+}
+
+.product-card {
+    border-radius: 26px; /* 20px → 26px */
+}
+
+/* Footer */
+.footer-section h3 {
+    font-size: 1.95rem; /* 1.5rem → 1.95rem */
+}
+
+.footer-links a,
+.footer-contact a {
+    font-size: 1.56rem; /* 1.2rem → 1.56rem */
+}
+
+.social-link {
+    width: 78px; /* 60px → 78px */
+    height: 78px;
+}
+
+.social-link i {
+    font-size: 2.34rem; /* 1.8rem → 2.34rem */
+}
+
+/* Butonlar */
+.btn {
+    padding: 20px 46px; /* 15px 35px → 20px 46px */
+    font-size: 1.56rem; /* 1.2rem → 1.56rem */
+}
+
+/* İletişim Formu */
+.form-group input,
+.form-group textarea {
+    padding: 26px; /* 20px → 26px */
+    font-size: 1.56rem; /* 1.2rem → 1.56rem */
+    border-radius: 20px; /* 15px → 20px */
+}
+
+/* Harita */
+.contact-map {
+    height: 910px; /* 700px → 910px */
+}
+
+/* About Section */
+.about-text {
+    font-size: 1.7rem; /* 1.3rem → 1.7rem */
+    line-height: 2;
+}
+
+.category-grid {
+    grid-template-columns: repeat(auto-fit, minmax(715px, 1fr)); /* 550px → 715px */
+}
+
+.category-icon {
+    font-size: 3.9rem; /* 3rem → 3.9rem */
+    padding: 52px; /* 40px → 52px */
+}
+
+.about-content {
+    max-width: 1755px; /* 1350px → 1755px */
+}
+
+.about-sections {
+    gap: 78px; /* 60px → 78px */
+    max-width: 1755px;
+}
+
+.about-section-item {
+    padding: 72px; /* 55px → 72px */
+}
+
+.section-header {
+    gap: 32px; /* 25px → 32px */
+    margin-bottom: 72px; /* 55px → 72px */
+}
+
+.section-header i {
+    font-size: 2.6rem; /* 2rem → 2.6rem */
+}
+
+.section-header h2 {
+    font-size: 2.6rem;
+}
+
+.section-content p {
+    font-size: 2rem; /* 1.5rem → 2rem */
+}
+
+.catalog-section {
+    padding: 156px 0; /* 120px → 156px */
+    min-height: 70vh;
+}
+
+.catalog-buttons {
+    max-width: 1560px; /* 1200px → 1560px */
+    gap: 65px; /* 50px → 65px */
+    padding: 0 39px; /* 30px → 39px */
+}
+
+.catalog-btn {
+    padding: 46px 130px; /* 35px 100px → 46px 130px */
+    font-size: 1.45rem; /* 1.125rem → 1.45rem */
+    max-width: 650px; /* 500px → 650px */
+}
+
+.catalog-btn i {
+    font-size: 2rem; /* 1.5rem → 2rem */
+    margin-right: 1.3rem;
+}
+
+/* İletişim Sayfası */
+.contact-section {
+    padding: 156px 0; /* 120px → 156px */
+}
+
+.contact-grid {
+    gap: 65px; /* 50px → 65px */
+    margin-bottom: 65px;
+    padding: 39px; /* 30px → 39px */
+}
+
+.contact-info {
+    gap: 39px; /* 30px → 39px */
+}
+
+.info-card {
+    padding: 46px; /* 35px → 46px */
+    gap: 32px; /* 25px → 32px */
+}
+
+.info-card i {
+    font-size: 1.3rem; /* 1rem → 1.3rem */
+}
+
+.info-card p,
+.info-card a {
+    font-size: 1.3rem; /* 1rem → 1.3rem */
+}
+
+.contact-map {
+    height: 1040px; /* 800px → 1040px */
+}
+
+
+.brands-grid {
+    grid-template-columns: repeat(auto-fill, minmax(676px, 1fr)); /* 520px → 676px */
+    gap: 52px; /* 40px → 52px */
+    max-width: 2730px; /* 2100px → 2730px */
+}
+
+.brand-card {
+    padding: 52px; /* 40px → 52px */
+}
+
+.brand-logo {
+    max-height: 195px; /* 150px → 195px */
+}
+
+
 }

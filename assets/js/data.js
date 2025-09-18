@@ -1,20 +1,20 @@
 // data.js
 window.products = {
     "unlu-mamul": [
-        {
-            id: 1,
-            name: 'Bohça Mantı Makinası',
-            description: 'Profesyonel hamur işleme çözümü.',
-            fullDescription: 'Bohça Mantı Makinası hakkında detaylı bilgi için bizimle iletişime geçiniz. Mertem A.Ş. olarak siz değerli müşterilemize herzaman en kaliteli ürünleri sunmak vazgeçilmez ilkemizdir.',
-            image: '/assets/images/urunimages/yeniresimler/Bohça Mantı Makinası.jpg',
-            productImages: [
-                '/assets/images/urunimages/yeniresimler/Bohça Mantı Makinası.jpg',
-                '/assets/images/urunimages/yeniresimler/Bohça Mantı Makinası new 1.jpeg',
-                '/assets/images/urunimages/yeniresimler/Bohça Mantı Makinası new 2.jpeg',
-            ],
-            stock: 20,
-            category: 'unlu-mamul'
-        },
+        // {
+        //     id: 1,
+        //     name: 'Bohça Mantı Makinası',
+        //     description: 'Profesyonel hamur işleme çözümü.',
+        //     fullDescription: 'Bohça Mantı Makinası hakkında detaylı bilgi için bizimle iletişime geçiniz. Mertem A.Ş. olarak siz değerli müşterilemize herzaman en kaliteli ürünleri sunmak vazgeçilmez ilkemizdir.',
+        //     image: '/assets/images/urunimages/yeniresimler/Bohça Mantı Makinası.jpg',
+        //     productImages: [
+        //         '/assets/images/urunimages/yeniresimler/Bohça Mantı Makinası.jpg',
+        //         '/assets/images/urunimages/yeniresimler/Bohça Mantı Makinası new 1.jpeg',
+        //         '/assets/images/urunimages/yeniresimler/Bohça Mantı Makinası new 2.jpeg',
+        //     ],
+        //     stock: 20,
+        //     category: 'unlu-mamul'
+        // },
         {
             id: 2,
             name: 'Börek Hattı',
@@ -26,6 +26,9 @@ window.products = {
                 '/assets/images/urunimages/yeniresimler/Börek Hattı.jpg',
                 '/assets/images/urunimages/yeniresimler/Börek Hattı new 1.jpeg',
                 '/assets/images/urunimages/yeniresimler/Börek Hattı new 2.jpeg',
+                '/assets/images/urunimages/yeniresimler/Su Böreği Hattı new 1.jpeg',
+                '/assets/images/urunimages/yeniresimler/Su Böreği Hattı new 2.jpeg',
+                '/assets/images/urunimages/yeniresimler/Su Böreği Hattı new 3.jpeg',
             ],
             stock: 20,
             category: 'unlu-mamul'
@@ -156,21 +159,21 @@ window.products = {
             stock: 20,
             category: 'unlu-mamul'
         },
-        {
-            id: 11,
-            name: 'Su Böreği Hattı',
-            description: 'Profesyonel su böreği üretim hattı.',
-            fullDescription: 'Su Böreği Hattı hakkında detaylı bilgi için bizimle iletişime geçiniz. Mertem A.Ş. olarak siz değerli müşterilemize herzaman en kaliteli ürünleri sunmak vazgeçilmez ilkemizdir.',
-            image: '/assets/images/1.png',
-            productImages: [
-                '/assets/images/1.png',
-                '/assets/images/urunimages/yeniresimler/Su Böreği Hattı new 1.jpeg',
-                '/assets/images/urunimages/yeniresimler/Su Böreği Hattı new 2.jpeg',
-                '/assets/images/urunimages/yeniresimler/Su Böreği Hattı new 3.jpeg',
-            ],
-            stock: 20,
-            category: 'unlu-mamul'
-        },
+        // {
+        //     id: 11,
+        //     name: 'Su Böreği Hattı',
+        //     description: 'Profesyonel su böreği üretim hattı.',
+        //     fullDescription: 'Su Böreği Hattı hakkında detaylı bilgi için bizimle iletişime geçiniz. Mertem A.Ş. olarak siz değerli müşterilemize herzaman en kaliteli ürünleri sunmak vazgeçilmez ilkemizdir.',
+        //     image: '/assets/images/1.png',
+        //     productImages: [
+        //         '/assets/images/1.png',
+        //         '/assets/images/urunimages/yeniresimler/Su Böreği Hattı new 1.jpeg',
+        //         '/assets/images/urunimages/yeniresimler/Su Böreği Hattı new 2.jpeg',
+        //         '/assets/images/urunimages/yeniresimler/Su Böreği Hattı new 3.jpeg',
+        //     ],
+        //     stock: 20,
+        //     category: 'unlu-mamul'
+        // },
         {
             id: 12,
             name: 'Bazlama ve Pide Makinası',

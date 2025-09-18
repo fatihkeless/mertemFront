@@ -1,0 +1,41 @@
+// Machine groups data
+// Keep titles concise; order matters as provided by stakeholder
+window.MACHINE_GROUPS = [
+  { title: "Gıda Makinaları" },
+  { title: "Unlu Mamul Makinaları" },
+  { title: "Hamur Açma Makinaları" },
+  { title: "Hamur Doldurma Makinaları" },
+  { title: "Pide Hattı Makinaları" },
+  { title: "Pizza Hattı Makinaları" },
+  { title: "Krep Makinaları" },
+  { title: "Donut Makinaları" },
+  { title: "Kruvasan Makinaları" },
+  { title: "Lahmacun Makinaları" },
+  { title: "Lavaş Makinaları" },
+  { title: "Börek Yufka Makinaları" },
+  { title: "Yaş Pasta Süsleme ve Çikolata Grubu" },
+  { title: "Rulo Kat Makinaları" },
+  { title: "Hamur Yuvarlama Makinaları" },
+  { title: "Antep Yuvalama Makinaları" },
+  { title: "İçli Köfte ve Künefe Makinaları" },
+  { title: "Hamburger Makinaları" },
+  { title: "İçi Dolgulu Mamül Makinaları" },
+  { title: "Peynir İçi Doldurma Şekillendirme Makinaları" },
+  { title: "Yumurta Kırma Makinaları" },
+  { title: "Depozitor Dolum ve Transfer Pompaları" },
+  { title: "Unlu Mamul - Ekmek Paketleme Makinaları" },
+  { title: "Tartolet Makinaları" },
+  { title: "Dondurma Külah Makinaları" },
+  { title: "Donuk Gıda Hattı Makinaları" },
+  { title: "Vakum Soğutma Hatları" },
+  { title: "Kızartma Makinaları" },
+  { title: "Grissini Makinaları" },
+  { title: "Krokan Kroket Hatları" },
+  { title: "Patates Cips Hatları" },
+  { title: "Meyve Suyu Sıkacağı Hatları" },
+  { title: "Buz Makinaları" },
+  { title: "Ultrasonik Giyotinler" },
+  { title: "Vakum Paketleme Makinaları" }
+];
+
+
