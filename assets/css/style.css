@@ -3859,6 +3859,183 @@ footer {
     line-height: 1.4;
 }
 
+
+/* S-Katalog Grid Section - Özel Tasarım */
+.s-catalog-grid-section {
+    padding: 5rem 0;
+    background: #f8f9fc;
+}
+
+.s-catalog-grid {
+    display: grid;
+    gap: 2.5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.s-catalog-item {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 2.5rem 1.875rem;
+    text-align: center;
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #e8e9f0;
+}
+
+.s-catalog-item:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.5rem 1.875rem rgba(0, 0, 0, 0.12);
+}
+
+.s-catalog-icon {
+    width: 5rem;
+    height: 5rem;
+    background: #40e0d0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5625rem;
+    transition: all 0.3s ease;
+}
+
+.s-catalog-item:hover .s-catalog-icon {
+    transform: scale(1.1);
+    background: linear-gradient(-45deg, rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35));
+}
+
+.s-catalog-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.s-catalog-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.9375rem;
+}
+
+.s-catalog-item p {
+    color: #7f8c8d;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5625rem;
+}
+
+.s-catalog-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #40e0d0;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.5625rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.s-catalog-download-btn:hover {
+    background: linear-gradient(-45deg, rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.35));
+    transform: translateY(-0.125rem);
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 188, 212, 0.3);
+    color: white;
+    text-decoration: none;
+}
+
+.s-catalog-download-btn i {
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 48rem) {
+    .s-catalog-grid {
+        grid-template-columns: 1fr;
+        gap: 1.875rem;
+        padding: 0 1.25rem;
+    }
+    
+    .s-catalog-item {
+        padding: 1.875rem 1.25rem;
+    }
+    
+    .s-catalog-icon {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+    
+    .s-catalog-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .s-catalog-item h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* 2K ve 4K için özel ayarlar */
+@media (min-width: 1440px) {
+    .s-catalog-grid {
+        max-width: 90rem;
+        gap: 3rem;
+    }
+    
+    .s-catalog-item {
+        padding: 3rem 2.25rem;
+    }
+    
+    .s-catalog-icon {
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    .s-catalog-icon i {
+        font-size: 2.5rem;
+    }
+    
+    .s-catalog-item h3 {
+        font-size: 1.75rem;
+    }
+    
+    .s-catalog-item p {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    .s-catalog-grid {
+        max-width: 100rem;
+        gap: 4rem;
+    }
+    
+    .s-catalog-item {
+        padding: 4rem 3rem;
+    }
+    
+    .s-catalog-icon {
+        width: 7rem;
+        height: 7rem;
+    }
+    
+    .s-catalog-icon i {
+        font-size: 3rem;
+    }
+    
+    .s-catalog-item h3 {
+        font-size: 2rem;
+    }
+    
+    .s-catalog-item p {
+        font-size: 1.25rem;
+    }
+}
+
+
 /* Responsive düzenlemeler */
 @media (max-width: 768px) {
     .swiper-button-next,
