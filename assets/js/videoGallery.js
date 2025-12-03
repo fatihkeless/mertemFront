@@ -2,6 +2,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Video verileri
     const videos = [
         {
+            id: '../assets/video/wpKonferans.mp4',
+            title: 'WP KONFERANS',
+            type: 'local',
+            thumbnail: '<source src="../assets/video/wpKonferans.mp4#t=1" type="video/mp4">'
+        },
+        {
             id: 'nXLQOKR7Ji4',
             title: 'YUFKA ÜRETİM HATTI - 20 YILLIK MÜŞTERİMİZİN DEVAM EDEN MEMNUNİYETİ',
             type: 'youtube'
@@ -597,6 +603,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (type === 'vimeo') {
             return `https://vumbnail.com/${videoId}.jpg`;
         }
+        else if( type === 'local'){
+            return null;
+        }
         
         // YouTube için birden fazla thumbnail seçeneği dene
         return {
@@ -666,12 +675,23 @@ document.addEventListener('DOMContentLoaded', function() {
         const videoCard = document.createElement('div');
         videoCard.className = 'swiper-slide';
         
-        const thumbnails = getThumbnailUrl(video.id, video.type);
+        let thumbnails = null;
+        if (video.type !== 'local') {
+            thumbnails = getThumbnailUrl(video.id, video.type);
+        }
         const truncatedTitle = truncateTitle(video.title);
         
         let imgHTML = '';
         if (video.type === 'vimeo') {
             imgHTML = `<img src="${thumbnails}" alt="${video.title}">`;
+        } else if (video.type === 'local') {
+            const sourceMarkup = video.thumbnail || `<source src="${video.id}#t=2" type="video/mp4">`;
+            imgHTML = `
+                <video preload="metadata" muted>
+                    ${sourceMarkup}
+                    Your browser does not support the video tag.
+                </video>
+            `;
         } else {
             imgHTML = `
                 <img 
@@ -779,18 +799,39 @@ document.addEventListener('DOMContentLoaded', function() {
             const videoId = this.dataset.videoId;
             const videoType = this.dataset.videoType;
             
-            const embedUrl = videoType === 'youtube'
-                ? `https://www.youtube.com/embed/${videoId}?autoplay=1`
-                : `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+            let modalContent = '';
+            if (videoType === 'youtube') {
+                const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                modalContent = `
+                    <iframe
+                        src="${embedUrl}"
+                        frameborder="0"
+                        allow="autoplay; fullscreen"
+                        allowfullscreen
+                    ></iframe>
+                `;
+            } else if (videoType === 'vimeo') {
+                const embedUrl = `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+                modalContent = `
+                    <iframe
+                        src="${embedUrl}"
+                        frameborder="0"
+                        allow="autoplay; fullscreen"
+                        allowfullscreen
+                    ></iframe>
+                `;
+            } else if (videoType === 'local') {
+                modalContent = `
+                    <video controls autoplay playsinline>
+                        <source src="${videoId}" type="video/mp4">
+                        Tarayıcınız video etiketini desteklemiyor.
+                    </video>
+                `;
+            } else {
+                return;
+            }
 
-            videoContainer.innerHTML = `
-                <iframe
-                    src="${embedUrl}"
-                    frameborder="0"
-                    allow="autoplay; fullscreen"
-                    allowfullscreen
-                ></iframe>
-            `;
+            videoContainer.innerHTML = modalContent;
             
             modal.style.display = 'flex';
         });

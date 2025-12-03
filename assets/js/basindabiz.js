@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Video data mapping
     const videoData = {
+        'wpKonferans': {
+            src: '../assets/video/wpKonferans.mp4',
+            title: 'WP KONFERANS',
+            desc: 'WP KONFERANS videosu'
+        },
         'mertemtanitim': {
             src: '../assets/video/tanitim2.mp4',
             title: 'Nostalji - Özel Video',
